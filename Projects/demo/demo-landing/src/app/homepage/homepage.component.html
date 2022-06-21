@@ -1,0 +1,140 @@
+<div class="vh-100 container-fluid bg-video">
+  <video autoplay [muted]="'muted'" loop id="myVideo">
+    <source
+      src="https://www.iflex2u.com/wp-content/uploads/2022/04/mmexport1643963207515.mp4"
+      type="video/mp4"
+    />
+  </video>
+  <div class="h-100 container">
+    <section #showcase class="showcase">
+      <nav #hoverMenu class="d-none d-lg-block main-menu">
+        <ul>
+          <li class="side-1 list1">
+            <a href="http://justinfarrow.com">
+              <i class="fa fa-dashboard"></i>
+              <span class="nav-text"> Tubos e Calhas </span>
+            </a>
+          </li>
+          <li class="has-subnav list2">
+            <a href="#">
+              <i class="fa fa-laptop fa-2x"></i>
+              <span class="nav-text"> Chapa em Formatos e em Bobines </span>
+            </a>
+          </li>
+          <li class="has-subnav list3">
+            <a href="#">
+              <i class="fa fa-list fa-2x"></i>
+              <span class="nav-text">
+                Chapa Industrial e de Alto Limite Elástico
+              </span>
+            </a>
+          </li>
+          <li class="has-subnav list4">
+            <a href="#">
+              <i class="fa fa-folder-open fa-2x"></i>
+              <span class="nav-text"> Perfis Estruturais </span>
+            </a>
+          </li>
+          <li class="list5">
+            <a href="#">
+              <i class="fa fa-bar-chart-o fa-2x"></i>
+              <span class="nav-text">
+                Varão de Construção e Malha Electrosoldada
+              </span>
+            </a>
+          </li>
+
+          <li class="list6">
+            <a href="#">
+              <i class="fa fa-table fa-2x"></i>
+              <span class="nav-text"> Perfis Comerciais </span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="logout">
+          <li>
+            <a href="#">
+              <i class="fa fa-arrow-left fa-2x"></i>
+              <span class="nav-text"> Find Out More </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <header>
+        <h2 class="logo">Ferro</h2>
+        <div #toggle (click)="openNav()" class="toggle"></div>
+      </header>
+
+      <div class="overlay"></div>
+      <div #heading class="text">
+        <h2>A força define-se por aquilo que a compõe.</h2>
+
+        <p>
+          E cada construção é tão fiável quanto a sua estrutura e as suas
+          fundações.
+        </p>
+      </div>
+      <ul class="social">
+        <li>
+          <div #playbtn class="d-flex align-items-center playbtn text-light">
+            <i class="fa fa-play me-2"></i><span>VER VÍDEO COMPLETO</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <div #menutab id="myNav" class="menu-overlay">
+      <div class="overlay-content">
+        <div class="d-flex h-100">
+          <div class="col-lg-10 col-12 d-flex h-100 bg-dark">
+            <div class="menuList align-self-center">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+
+          <div
+            class="d-lg-flex h-100 justify-content-center d-none bg-danger col-2"
+          >
+            <div class="align-self-center">
+              <a href="#">Thai</a>
+              <a href="#">English</a>
+              <a href="#">French</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid mobileSide d-block d-lg-none">
+  <div class="row">
+    <div class="d-flex align-items-center bg-secondary tab1 p-5">
+      <i class="me-4 fa fa-dashboard"></i> Tubos e Calhas
+    </div>
+
+    <div class="d-flex align-items-center bg-secondary tab2 p-5">
+      <i class="me-4 fa fa-laptop"></i> Chapa em Formatos e em Bobines
+    </div>
+
+    <div class="d-flex align-items-center bg-secondary tab3 p-5">
+      <i class="me-4 fa fa-list"></i> Chapa Industrial e de Alto Limite Elástico
+    </div>
+
+    <div class="d-flex align-items-center bg-secondary tab4 p-5">
+      <i class="me-4 fa fa-folder-open"></i> Perfis Estruturais
+    </div>
+
+    <div class="d-flex align-items-center bg-secondary tab5 p-5">
+      <i class="me-4 fa fa-bar-chart"></i> Varão de Construção e Malha
+      Electrosoldada
+    </div>
+
+    <div class="d-flex align-items-center bg-secondary tab6 p-5">
+      <i class="me-4 fa fa-table"></i> Perfis Comerciais
+    </div>
+  </div>
+</div>
